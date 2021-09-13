@@ -3,7 +3,7 @@
 
 ## Fist time initialization
 
-1. Create `.dotfiles` directory in `HOME` directory.
+1. Create `.dotfiles` directory in `$HOME` directory.
     ```sh
     ❯ cd $HOME
     ❯ mkdir .dotfiles
@@ -39,6 +39,33 @@
     ❯ git_dotfiles push
     ```
     **Note**: This command doesn't depend upon what directory you are in.
+
+
+## Copy your dotfiles onto a new system
+
+1. Before doing anything, make sure you have your modified git command for git bare repository in place in the current terminal. This is temporary, and it will be overwridden by the same alias in `.zshrc` file. 
+
+    ```sh
+    alias git_dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+    ```
+
+2. We will be cloning the git repo in a directory named `.dotfiles`. We first need to add that to the `.gitignore` file to remove any circular dependency.
+
+    ```sh
+   ❯ echo ".dotfiles" >> .gitignore
+    ```
+
+3. Clone the git repository.
+
+    ```sh
+    ❯ git clone --bare https://github.com/NamanRastogi/.dotfiles.git $HOME/.dotfiles
+    ```
+
+4. Copy files from git repository to `$HOME` directory. It it throws error, backup or delete exisitng files having conflicts and run the command again.
+
+    ```sh
+    ❯ git_dotfiles checkout
+    ```
 
 
 ## Reference
