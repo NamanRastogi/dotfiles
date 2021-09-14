@@ -84,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 export POWERLEVEL_9K_SHORTEN_STRATEGY=truncate_with_folder_marker
 
 # Aliases
-alias ll='ls -la'
+alias ll='ls -lAF'
 alias git_dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
