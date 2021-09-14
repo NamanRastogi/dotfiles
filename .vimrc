@@ -4,3 +4,4 @@ set background=dark
 set hlsearch
 nnoremap <esc><esc> :silent! nohls<cr>
 
+syntax on
