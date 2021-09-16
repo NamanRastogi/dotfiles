@@ -8,6 +8,7 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
+    "workbench.tree.indent": 16,
     "explorer.openEditors.visible": 0,
     "files.trimTrailingWhitespace": true,
     "editor.fontFamily": "Fira Code",
