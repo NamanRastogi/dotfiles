@@ -6,11 +6,11 @@ fi
 
 # Auto-completion
 # ---------------
-[[ $- == *i* ]] && source "/home/wsl/.fzf/shell/completion.zsh" 2> /dev/null
+[[ $- == *i* ]] && source "$HOME/.fzf/shell/completion.zsh" 2> /dev/null
 
 # Key bindings
 # ------------
-source "/home/wsl/.fzf/shell/key-bindings.zsh"
+source "$HOME/.fzf/shell/key-bindings.zsh"
 
 # Customization
 export FZF_DEFAULT_COMMAND='fd --type f --hidden'
