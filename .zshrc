@@ -30,7 +30,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 # export TERM='screen-256color'
 
-export POWERLEVEL_9K_SHORTEN_STRATEGY=truncate_with_folder_marker
+typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_with_folder_marker
 
 # Aliases
 alias ll='ls -lAF'
