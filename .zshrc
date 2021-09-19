@@ -21,21 +21,20 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
-# export TERM='screen-256color'
-
-# User configuration
-export POWERLEVEL_9K_SHORTEN_STRATEGY=truncate_with_folder_marker
-
-# Aliases
-alias ll='ls -lAF'
-alias git_dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source $ZSH/oh-my-zsh.sh
+# export TERM='screen-256color'
+
+export POWERLEVEL_9K_SHORTEN_STRATEGY=truncate_with_folder_marker
+
+# Aliases
+alias ll='ls -lAF'
+alias git_dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Run neofetch
 export POWERLEVEL9K_INSTANT_PROMPT=quiet
