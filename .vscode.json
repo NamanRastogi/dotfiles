@@ -26,11 +26,11 @@
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.scrollback": 100000,
+    "terminal.integrated.defaultProfile.linux": "zsh",
     "zenMode.hideTabs": false,
     "zenMode.hideStatusBar": false,
     "zenMode.hideActivityBar": false,
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "python.languageServer": "Pylance",
     "python.pythonPath": "/usr/bin/python3",
     "python.formatting.provider": "yapf"
