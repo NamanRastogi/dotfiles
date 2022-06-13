@@ -1,5 +1,20 @@
 # Dotfiles Management using Git Bare Repo
 
+## Install the following tools on your machine
+| Tool | Command to install |
+|---|---|
+| Git                                                   | `sudo apt install git` |
+| Zsh                                                   | `sudo apt install zsh` |
+| [Oh My ZSH](https://ohmyz.sh/#install)                | |
+| [PowerLevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh) | |
+| [exa](https://the.exa.website/)                       | `sudo apt install exa` |
+| [tmux](https://github.com/tmux/tmux/wiki)             | `sudo apt install tmux` |
+| [fzf](https://github.com/junegunn/fzf)                | `sudo apt install fzf` |
+| [BAT](https://github.com/sharkdp/bat)                 | `sudo apt install bat` |
+| [Midnight Commander](https://midnight-commander.org/) | `sudo apt install mc` |
+| [fd-find](https://github.com/sharkdp/fd)              | `sudo apt install fd-find` |
+| [neofetch](https://github.com/dylanaraps/neofetch)    | `sudo apt install neofetch` |
+
 
 ## Fist time initialization
 
@@ -9,14 +24,14 @@
     mkdir .dotfiles
     ```
 
-2. Initialize git bare repository
+1. Initialize git bare repository
     ```sh
     cd .dotfiles
     git init --bare
     cd $HOME
     ```
 
-3. Create a new alias for the git for this "git bare" repository. Add the following line in your `.bashrc` or `.zshrc` file depending upon what you use.
+1. Create a new alias for the git for this "git bare" repository. Add the following line in your `.bashrc` or `.zshrc` file depending upon what you use.
     ```sh
     alias git_dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
     ```
@@ -25,12 +40,12 @@
     echo "alias git_dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.bashrc
     ```
 
-4. Run the following commands.
+1. Run the following commands.
     ```sh
     git_dotfiles config --local status.showUntrackedFiles no
     ```
 
-5. Add all the files you want to track in git. For example to add `.bashrc` file, run the following command.
+1. Add all the files you want to track in git. For example to add `.bashrc` file, run the following command.
     ```sh
     cd $HOME
     git_dotfiles config status
@@ -43,25 +58,25 @@
 
 ## Copy your dotfiles onto a new system
 
-1. Before doing anything, make sure you have your modified git command for git bare repository in place in the current terminal. This is temporary, and it will be overwridden by the same alias in `.zshrc` file. 
+1. Before doing anything, make sure you have your modified git command for git bare repository in place in the current terminal. This is temporary, and it will be overwridden by the same alias in `.zshrc` file.
 
     ```sh
     alias git_dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
     ```
 
-2. We will be cloning the git repo in a directory named `.dotfiles`. We first need to add that to the `.gitignore` file to remove any circular dependency.
+1. We will be cloning the git repo in a directory named `.dotfiles`. We first need to add that to the `.gitignore` file to remove any circular dependency.
 
     ```sh
     echo ".dotfiles" >> .gitignore
     ```
 
-3. Clone the git repository.
+1. Clone the git repository.
 
     ```sh
     git clone --bare https://github.com/NamanRastogi/.dotfiles.git $HOME/.dotfiles
     ```
 
-4. Copy files from git repository to `$HOME` directory. It it throws error, backup or delete exisitng files having conflicts and run the command again.
+1. Copy files from git repository to `$HOME` directory. It it throws error, backup or delete exisitng files having conflicts and run the command again.
 
     ```sh
     git_dotfiles checkout
