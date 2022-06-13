@@ -33,7 +33,8 @@ source $ZSH/oh-my-zsh.sh
 typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_with_folder_marker
 
 # Aliases
-alias ll='ls -lAFh'
+alias ls='exa -aF --group-directories-first'
+alias ll='exa -lFa --sort=Name --group-directories-first --header'
 alias git_dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Run neofetch
