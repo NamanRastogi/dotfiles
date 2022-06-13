@@ -35,7 +35,7 @@ typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_with_folder_marker
 # Aliases
 alias ls='exa -aF --group-directories-first'
 alias ll='exa -lFa --sort=Name --group-directories-first --header'
-alias tree='exa --tree --level=2'
+alias tree='exa --tree'
 alias cat='batcat'
 alias git_dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
