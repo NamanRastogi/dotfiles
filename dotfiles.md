@@ -1,19 +1,19 @@
 # Dotfiles Management using Git Bare Repo
 
 ## Install the following tools on your machine
-| Tool | Command to install |
-|---|---|
-| Git                                                   | `sudo apt install git` |
-| Zsh                                                   | `sudo apt install zsh` |
-| [Oh My ZSH](https://ohmyz.sh/#install)                | |
-| [PowerLevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh) | |
-| [exa](https://the.exa.website/)                       | `sudo apt install exa` |
-| [tmux](https://github.com/tmux/tmux/wiki)             | `sudo apt install tmux` |
-| [fzf](https://github.com/junegunn/fzf)                | `sudo apt install fzf` |
-| [BAT](https://github.com/sharkdp/bat)                 | `sudo apt install bat` |
-| [Midnight Commander](https://midnight-commander.org/) | `sudo apt install mc` |
-| [fd-find](https://github.com/sharkdp/fd)              | `sudo apt install fd-find` |
-| [neofetch](https://github.com/dylanaraps/neofetch)    | `sudo apt install neofetch` |
+| Tool | Command to install | Comments |
+|---|---|--|
+| Git                                                   | `sudo apt install git` | |
+| Zsh                                                   | `sudo apt install zsh` | |
+| [Oh My ZSH](https://ohmyz.sh/#install)                | | |
+| [PowerLevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh) | | |
+| [exa](https://the.exa.website/)                       | `sudo apt install exa` | Exa is not on linux anymore, need to install manually. |
+| [tmux](https://github.com/tmux/tmux/wiki)             | `sudo apt install tmux` | |
+| [fzf](https://github.com/junegunn/fzf)                | ~`sudo apt install fzf`~ | Install from Github. |
+| [BAT](https://github.com/sharkdp/bat)                 | `sudo apt install bat` | `ln -s <batcat location> /usr/local/bin/bat` |
+| [Midnight Commander](https://midnight-commander.org/) | `sudo apt install mc` | |
+| [fd-find](https://github.com/sharkdp/fd)              | `sudo apt install fd-find` | `ln -s <fdfind location> /usr/local/bin/fd` |
+| [neofetch](https://github.com/dylanaraps/neofetch)    | `sudo apt install neofetch` | |
 
 
 ## Fist time initialization
