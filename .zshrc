@@ -30,6 +30,9 @@ source $ZSH/oh-my-zsh.sh
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# bat
+export BAT_CONFIG_PATH="$HOME/.config/bat/config"
+
 typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_with_folder_marker
 
 # Aliases
