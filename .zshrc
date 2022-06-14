@@ -29,6 +29,7 @@ source $ZSH/oh-my-zsh.sh
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+bindkey "ç" fzf-cd-widget  # For MacOS
 
 # bat
 export BAT_CONFIG_PATH="$HOME/.config/bat/config"
