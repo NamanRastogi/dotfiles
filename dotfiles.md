@@ -17,6 +17,7 @@
 | [Midnight Commander](https://midnight-commander.org/) | `sudo apt install mc` | |
 | [fd-find](https://github.com/sharkdp/fd)              | `sudo apt install fd-find` | `ln -s <fdfind location> /usr/local/bin/fd` |
 | [neofetch](https://github.com/dylanaraps/neofetch)    | `sudo apt install neofetch` | |
+| [vim-plug](https://github.com/junegunn/vim-plug)      | | |
 
 
 ## Fist time initialization
