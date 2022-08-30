@@ -22,6 +22,7 @@
     "editor.autoClosingQuotes": "always",
     "editor.formatOnPaste": true,
     "editor.bracketPairColorization.enabled": true,
+    "editor.scrollBeyondLastLine": true,
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "terminal.integrated.fontSize": 12,
