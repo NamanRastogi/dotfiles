@@ -12,7 +12,7 @@
 | [exa](https://the.exa.website/)                       | `sudo apt install exa` | Exa is not on linux anymore, need to install manually. |
 | [tmux](https://github.com/tmux/tmux/wiki)             | `sudo apt install tmux` | |
 | [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) | | |
-| [fzf](https://github.com/junegunn/fzf)                | ~`sudo apt install fzf`~ | Install from Github. |
+| [fzf](https://github.com/junegunn/fzf)                | `sudo apt install fzf` | |
 | [BAT](https://github.com/sharkdp/bat)                 | `sudo apt install bat` | `ln -s <batcat location> /usr/local/bin/bat` |
 | [Midnight Commander](https://midnight-commander.org/) | `sudo apt install mc` | |
 | [fd-find](https://github.com/sharkdp/fd)              | `sudo apt install fd-find` | `ln -s <fdfind location> /usr/local/bin/fd` |
