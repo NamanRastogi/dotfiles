@@ -32,7 +32,7 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.config/fzf.zsh ] && source ~/.config/fzf.zsh
 bindkey "ç" fzf-cd-widget  # For MacOS
 
 # bat
@@ -50,3 +50,4 @@ alias git_dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # Run neofetch
 export POWERLEVEL9K_INSTANT_PROMPT=quiet
 neofetch
+
