@@ -1,11 +1,33 @@
+" ##########################################
+" ## Plugins using vim-plug
+" ## https://github.com/junegunn/vim-plug
+" ##########################################
+call plug#begin()
+
+Plug 'sheerun/vim-polyglot'
+Plug 'itchyny/lightline.vim'
+Plug 'sainnhe/sonokai'
+
+call plug#end()
+
+" Themes
+colorscheme sonokai
+
+" Lightline
+let g:lightline = {'colorscheme': 'sonokai'}
+
+" To fix terminal issue where everything is black and white
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
 " Enable modern Vim features not compatible with Vi spec.
 set nocompatible
 
 " Enable UTF-8 encoding
 set encoding=UTF-8
-
-" Enable mouse support
-set mouse=a
 
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
@@ -82,29 +104,3 @@ set wildmode=list:longest
 
 " Enable status line
 set laststatus=2
-
-
-" ##########################################
-" ## Plugins using vim-plug
-" ## https://github.com/junegunn/vim-plug
-" ##########################################
-
-call plug#begin()
-
-Plug 'https://github.com/rafi/awesome-vim-colorschemes'
-Plug 'itchyny/lightline.vim'
-
-call plug#end()
-
-" Colorscheme: OneHalfDark
-" https://github.com/sonph/onehalf
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-endif
-
-colorscheme onehalfdark
-
-" Lightline
-let g:lightline = {'colorscheme': 'one'}
