@@ -1,7 +1,7 @@
 " ##########################################
 " ## Plugins using vim-plug
-" ## https://github.com/junegunn/vim-plug
 " ##########################################
+
 call plug#begin()
 
 Plug 'sheerun/vim-polyglot'
@@ -9,6 +9,14 @@ Plug 'itchyny/lightline.vim'
 Plug 'sainnhe/sonokai'
 
 call plug#end()
+
+
+" ##########################################
+" ## Colorscheme and Visual Elements
+" ##########################################
+
+" Set dark background
+set background=dark
 
 " Themes
 colorscheme sonokai
@@ -23,20 +31,52 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
+" Add numbers to each line on the left-hand side.
+set number
+" set relativenumber
+
+" Highlight cursor line underneath the cursor horizontally.
+set cursorline
+
+" Show partial command you type in the last line of the screen.
+set showcmd
+
+" Show the mode you are on the last line.
+set showmode
+
+" Enable status line
+set laststatus=2
+
+
+" ##########################################
+" ## General
+" ##########################################
+
 " Enable modern Vim features not compatible with Vi spec.
 set nocompatible
 
 " Enable UTF-8 encoding
 set encoding=UTF-8
 
+" Set shift width to 4 spaces.
+set shiftwidth=4
+
+" Set tab width to 4 columns.
+set tabstop=4
+
+" Use space characters instead of tabs.
+set expandtab
+
+
+" ##########################################
+" ## Filetypes and Syntax
+" ##########################################
+
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
 
 " Enable plugins and load plugin for the detected file type.
 filetype plugin on
-
-" Enable auto indentation
-set autoindent
 
 " Load an indent file for the detected file type.
 filetype indent on
@@ -54,24 +94,10 @@ filetype plugin indent on
 " Turn syntax highlighting on.
 syntax on
 
-" Set dark background
-set background=dark
 
-" Add numbers to each line on the left-hand side.
-set number
-" set relativenumber
-
-" Highlight cursor line underneath the cursor horizontally.
-set cursorline
-
-" Set shift width to 4 spaces.
-set shiftwidth=4
-
-" Set tab width to 4 columns.
-set tabstop=4
-
-" Use space characters instead of tabs.
-set expandtab
+" ##########################################
+" ## Search
+" ##########################################
 
 " Highlight search
 set hlsearch
@@ -84,23 +110,14 @@ set ignorecase
 " This will allow you to search specifically for capital letters.
 set smartcase
 
-" Show partial command you type in the last line of the screen.
-set showcmd
-
-" Show the mode you are on the last line.
-set showmode
-
 " Show matching words during a search.
 set showmatch
 
-" Set the commands to save in history default number is 20.
-set history=1000
+
+" ##########################################
+" ## Command mode
+" ##########################################
 
 " Enable auto completion menu after pressing TAB.
 set wildmenu
-
-" Make wildmenu behave like similar to Bash completion.
-set wildmode=list:longest
-
-" Enable status line
-set laststatus=2
+set wildmode=list:full
