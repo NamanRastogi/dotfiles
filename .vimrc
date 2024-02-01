@@ -34,6 +34,7 @@ set cursorline                " Highlight cursor line underneath the cursor hori
 set showcmd                   " Show partial command you type in the last line of the screen.
 set showmode                  " Show the mode you are on the last line.
 set laststatus=2              " Enable status line
+set ruler
 
 
 " ##########################################
@@ -45,7 +46,11 @@ set encoding=UTF-8
 set shiftwidth=4              " Set shift width to 4 spaces.
 set tabstop=4                 " Set tab width to 4 columns.
 set expandtab                 " Use space characters instead of tabs.
-
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+  " Strings to use in 'list' mode and for the :list command.
+set scrolloff=5               " Vertical offset when scrolling.
+set sidescroll=1              " Min number of columns to horizontal scroll.
+set sidescrolloff=2           " Horizontal offset when side scrolling.
+set backspace=indent,eol,start  " Allow backspacing over autoindent, line breaks and start of insert.
 
 " ##########################################
 " ## Filetypes and Syntax
@@ -81,6 +86,7 @@ set smartcase
 
 set ignorecase                " Ignore capital letters during search.
 set showmatch                 " Show matching words during a search.
+set incsearch                 " While typing a search command, the matched string is highlighted on the fly.
 
 
 " ##########################################
