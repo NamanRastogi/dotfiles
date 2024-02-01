@@ -15,11 +15,8 @@ call plug#end()
 " ## Colorscheme and Visual Elements
 " ##########################################
 
-" Set dark background
-set background=dark
-
-" Themes
-colorscheme sonokai
+set background=dark           " Set dark background
+colorscheme sonokai           " Themes
 
 " Lightline
 let g:lightline = {'colorscheme': 'sonokai'}
@@ -31,55 +28,33 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-" Add numbers to each line on the left-hand side.
-set number
+set number                    " Add numbers to each line on the left-hand side.
 " set relativenumber
-
-" Highlight cursor line underneath the cursor horizontally.
-set cursorline
-
-" Show partial command you type in the last line of the screen.
-set showcmd
-
-" Show the mode you are on the last line.
-set showmode
-
-" Enable status line
-set laststatus=2
+set cursorline                " Highlight cursor line underneath the cursor horizontally.
+set showcmd                   " Show partial command you type in the last line of the screen.
+set showmode                  " Show the mode you are on the last line.
+set laststatus=2              " Enable status line
 
 
 " ##########################################
 " ## General
 " ##########################################
 
-" Enable modern Vim features not compatible with Vi spec.
-set nocompatible
-
-" Enable UTF-8 encoding
+set nocompatible              " Enable modern Vim features not compatible with Vi spec.
 set encoding=UTF-8
-
-" Set shift width to 4 spaces.
-set shiftwidth=4
-
-" Set tab width to 4 columns.
-set tabstop=4
-
-" Use space characters instead of tabs.
-set expandtab
+set shiftwidth=4              " Set shift width to 4 spaces.
+set tabstop=4                 " Set tab width to 4 columns.
+set expandtab                 " Use space characters instead of tabs.
 
 
 " ##########################################
 " ## Filetypes and Syntax
 " ##########################################
 
-" Enable type file detection. Vim will be able to try to detect the type of file in use.
-filetype on
-
-" Enable plugins and load plugin for the detected file type.
-filetype plugin on
-
-" Load an indent file for the detected file type.
-filetype indent on
+syntax on                     " Turn syntax highlighting on.>
+filetype on                   " Enable type file detection. Vim will be able to try to detect the type of file in use.
+filetype plugin on            " Enable plugins and load plugin for the detected file type.
+filetype indent on            " Load an indent file for the detected file type.
 
 " Enable file type based indent configuration and syntax highlighting.
 " Note that when code is pasted via the terminal, vim by default does not detect
@@ -91,9 +66,6 @@ filetype indent on
 " - auto-detect pasting (https://github.com/ConradIrwin/vim-bracketed-paste)
 filetype plugin indent on
 
-" Turn syntax highlighting on.
-syntax on
-
 
 " ##########################################
 " ## Search
@@ -103,15 +75,12 @@ syntax on
 set hlsearch
 nnoremap <esc><esc> :silent! nohls<cr>
 
-" Ignore capital letters during search.
-set ignorecase
-
 " Override the ignorecase option if searching for capital letters.
 " This will allow you to search specifically for capital letters.
 set smartcase
 
-" Show matching words during a search.
-set showmatch
+set ignorecase                " Ignore capital letters during search.
+set showmatch                 " Show matching words during a search.
 
 
 " ##########################################
