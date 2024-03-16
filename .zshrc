@@ -44,9 +44,8 @@ typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_with_folder_marker
 alias ls='eza -aF --group-directories-first'
 alias ll='eza -lFa --sort=Name --group-directories-first --header'
 alias cat='bat'
-alias git_dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias lg='lazygit'
-alias lazygit_dotfiles='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles_git='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles_lazygit='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Run neofetch
 export POWERLEVEL9K_INSTANT_PROMPT=quiet
