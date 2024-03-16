@@ -18,6 +18,6 @@ source /usr/share/doc/fzf/examples/key-bindings.zsh
 export FZF_DEFAULT_COMMAND='fd --type f --hidden'
 export FZF_DEFAULT_OPTS='--no-height'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_CTRL_T_OPTS="--preview 'bat {}'"
+export FZF_CTRL_T_OPTS="--preview 'batcat {}'"
 export FZF_ALT_C_COMMAND='fd --type d . --hidden'
 export FZF_ALT_C_OPTS="--preview 'eza --tree --level=2 {}'"
