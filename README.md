@@ -9,7 +9,7 @@
 | [PowerLevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh) | | |
 | [zsh-syntax-highlighting ](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh) | | |
 | [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh) | | |
-| [exa](https://the.exa.website/)                       | `sudo apt install exa` | Exa is not on linux anymore, need to install manually. |
+| [eza](https://github.com/eza-community/eza) | `sudo apt install eza` | |
 | [tmux](https://github.com/tmux/tmux/wiki)             | `sudo apt install tmux` | |
 | [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) | | |
 | [fzf](https://github.com/junegunn/fzf)                | `sudo apt install fzf` | |
