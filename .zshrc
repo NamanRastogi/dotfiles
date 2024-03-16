@@ -41,8 +41,8 @@ export BAT_CONFIG_PATH="$HOME/.config/bat/config"
 typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_with_folder_marker
 
 # Aliases
-alias ls='eza -aF --group-directories-first'
-alias ll='eza -lFa --sort=Name --group-directories-first --header'
+alias ls='eza -aF --sort=Name --group-directories-first'
+alias ll='eza -alF --sort=Name --group-directories-first --header'
 alias cat='batcat'
 alias dotfiles_git='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dotfiles_lazygit='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
