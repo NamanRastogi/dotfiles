@@ -36,25 +36,25 @@
 
 1. Create a new alias for the git for this "git bare" repository. Add the following line in your `.bashrc` or `.zshrc` file depending upon what you use.
     ```sh
-    alias git_dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+    alias dotfiles_git='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
     ```
     Or trun the following command to do that automatically.
     ```sh
-    echo "alias git_dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.bashrc
+    echo "alias dotfiles_git='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.bashrc
     ```
 
 1. Run the following commands.
     ```sh
-    git_dotfiles config --local status.showUntrackedFiles no
+    dotfiles_git config --local status.showUntrackedFiles no
     ```
 
 1. Add all the files you want to track in git. For example to add `.bashrc` file, run the following command.
     ```sh
     cd $HOME
-    git_dotfiles config status
-    git_dotfiles add .bashrc
-    git_dotfiles commit -m "Add bashrc."
-    git_dotfiles push
+    dotfiles_git config status
+    dotfiles_git add .bashrc
+    dotfiles_git commit -m "Add bashrc."
+    dotfiles_git push
     ```
     **Note**: This command doesn't depend upon what directory you are in.
 
@@ -64,7 +64,7 @@
 1. Before doing anything, make sure you have your modified git command for git bare repository in place in the current terminal. This is temporary, and it will be overwridden by the same alias in `.zshrc` file.
 
     ```sh
-    alias git_dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+    alias dotfiles_git='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
     ```
 
 1. We will be cloning the git repo in a directory named `.dotfiles`. We first need to add that to the `.gitignore` file to remove any circular dependency.
@@ -82,7 +82,7 @@
 1. Copy files from git repository to `$HOME` directory. It it throws error, backup or delete exisitng files having conflicts and run the command again.
 
     ```sh
-    git_dotfiles checkout
+    dotfiles_git checkout
     ```
 
 
