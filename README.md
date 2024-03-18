@@ -11,12 +11,12 @@
 | [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh) | | |
 | [eza](https://github.com/eza-community/eza/blob/main/INSTALL.md#debian-and-ubuntu) | | |
 | [tmux](https://github.com/tmux/tmux/wiki)             | `sudo apt install tmux` | |
-| [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) | | |
+| [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm#installation) | | |
 | [fzf](https://github.com/junegunn/fzf)                | `sudo apt install fzf` | |
 | [BAT](https://github.com/sharkdp/bat)                 | `sudo apt install bat` | `ln -s <batcat location> /usr/local/bin/bat` |
 | [fd-find](https://github.com/sharkdp/fd)              | `sudo apt install fd-find` | `ln -s <fdfind location> /usr/local/bin/fd` |
 | [neofetch](https://github.com/dylanaraps/neofetch)    | `sudo apt install neofetch` | |
-| [vim-plug](https://github.com/junegunn/vim-plug)      | | |
+| [vim-plug](https://github.com/junegunn/vim-plug#installation)      | | |
 
 
 ## Fist time initialization
