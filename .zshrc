@@ -49,5 +49,4 @@ alias dotfiles_lazygit='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Run neofetch
 export POWERLEVEL9K_INSTANT_PROMPT=quiet
-neofetch
-
+fastfetch
