@@ -1,0 +1,96 @@
+version = 3
+console_title_template = '{{ .Var.HostNickName }} {{ .PWD }}'
+final_space = true
+
+
+[upgrade]
+    interval = '168h'
+    auto = false
+    notice = true
+
+
+[var]
+    HostNickName = 'Macbook Pro'
+
+
+[[blocks]]
+    type = 'prompt'
+    alignment = 'left'
+    newline = true
+
+    [[blocks.segments]]
+        type = 'session'
+        style = 'diamond'
+        # leading_diamond = '<transparent,background></>'
+        trailing_diamond = ''
+        background = 'magenta'
+        foreground = 'lightWhite'
+        template = ' {{ if .SSHSession }} {{ end }} '
+
+    [[blocks.segments]]
+        type = 'os'
+        style = 'diamond'
+        trailing_diamond = ''
+        background = 'green'
+        foreground = 'black'
+        template = ' {{ .Icon }} {{ or .Var.HostNickName .HostName }} '
+
+    [[blocks.segments]]
+        type = 'path'
+        style = 'diamond'
+        trailing_diamond = ''
+        background = 'blue'
+        background_templates = ['{{ if not .Writable }}red{{ end }}']
+        foreground = 'lightWhite'
+        template = ' {{ if .Writable }} {{ else }}{{ end }} {{ path .Path .Location }} '
+
+        [blocks.segments.properties]
+            style = 'full'
+
+        [blocks.segments.properties.mapped_locations]
+            '/google/src/cloud/namanrastogi/' = '//'
+
+    [[blocks.segments]]
+        type = 'time'
+        style = 'diamond'
+        trailing_diamond = ''
+        background = 'lightYellow'
+        foreground = 'black'
+        template = '  {{ .CurrentDate | date .Format }} '
+
+        [blocks.segments.properties]
+            time_format = 'Mon, 02 Jan 15:04:05'
+
+    [[blocks.segments]]
+        type = 'executiontime'
+        style = 'diamond'
+        trailing_diamond = ''
+        background = 'lightYellow'
+        foreground = 'black'
+        template = '  {{ .FormattedMs }} '
+
+        [blocks.segments.properties]
+            threshold = 1000
+
+[[blocks]]
+    type = 'prompt'
+    alignment = 'left'
+    newline = true
+
+    [[blocks.segments]]
+        type = 'status'
+        style = 'plain'
+        background = 'transparent'
+        foreground = 'lightGreen'
+        foreground_templates = ['{{ if gt .Code 0 }}red{{ end }}']
+        # template = ' {{ if gt .Code 0 }}{{ else }}{{ end }} '
+        template = '❯'
+
+        [blocks.segments.properties]
+            always_enabled = true
+
+
+[secondary_prompt]
+background = 'transparent'
+foreground = 'yellow'
+template = '❯❯ '
