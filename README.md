@@ -19,46 +19,6 @@
 | [vim-plug](https://github.com/junegunn/vim-plug#installation)      | | |
 
 
-## Fist time initialization
-
-1. Create `.dotfiles` directory in `$HOME` directory.
-    ```sh
-    cd $HOME
-    mkdir .dotfiles
-    ```
-
-1. Initialize git bare repository
-    ```sh
-    cd .dotfiles
-    git init --bare
-    cd $HOME
-    ```
-
-1. Create a new alias for the git for this "git bare" repository. Add the following line in your `.bashrc` or `.zshrc` file depending upon what you use.
-    ```sh
-    alias dotfiles_git='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-    ```
-    Or trun the following command to do that automatically.
-    ```sh
-    echo "alias dotfiles_git='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.bashrc
-    ```
-
-1. Run the following commands.
-    ```sh
-    dotfiles_git config --local status.showUntrackedFiles no
-    ```
-
-1. Add all the files you want to track in git. For example to add `.bashrc` file, run the following command.
-    ```sh
-    cd $HOME
-    dotfiles_git config status
-    dotfiles_git add .bashrc
-    dotfiles_git commit -m "Add bashrc."
-    dotfiles_git push
-    ```
-    **Note**: This command doesn't depend upon what directory you are in.
-
-
 ## Copy your dotfiles onto a new system
 
 1. Clone the git repository.
