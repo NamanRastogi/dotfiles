@@ -31,7 +31,7 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # fzf
-[ -f ~/.config/fzf.zsh ] && source ~/.config/fzf.zsh
+[ -f ~/.config/fzf/fzf.zsh ] && source ~/.config/fzf/fzf.zsh
 bindkey "ç" fzf-cd-widget  # For MacOS
 
 # bat
