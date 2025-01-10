@@ -7,8 +7,8 @@
 | Zsh                                                   | `sudo apt install zsh` | |
 | GNU Stow                                              | `suto apt install stow` | |
 | [Oh My Posh](https://ohmyposh.dev/docs/installation/linux) | | |
-| [zsh-syntax-highlighting ](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#in-your-zshrc) | | |
-| [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone) | | |
+| [zsh-syntax-highlighting ](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#in-your-zshrc) | `git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting` | |
+| [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone) | `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions` | |
 | [eza](https://github.com/eza-community/eza/blob/main/INSTALL.md#debian-and-ubuntu) | | |
 | [tmux](https://github.com/tmux/tmux/wiki)             | `sudo apt install tmux` | |
 | [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm#installation) | | |
