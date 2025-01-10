@@ -1,3 +1,6 @@
+# Cloned from https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/history.zsh
+# on 10th Jan 2025
+
 ## History wrapper
 function omz_history {
   # parse arguments and remove from $@
