@@ -14,14 +14,8 @@ setopt hist_ignore_space      # ignore commands that start with space
 setopt hist_verify            # show command with history expansion to user before running it
 setopt inc_append_history     # new lines added to the $HISTFILE as soon as they are entered
 
-# Search history using up and down arrow
-# Copied from https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/key-bindings.zsh
-autoload -U up-line-or-beginning-search
-zle -N up-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search  # Start typing + [Up-Arrow] - fuzzy find history forward
-autoload -U down-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "^[[B" down-line-or-beginning-search  # Start typing + [Down-Arrow] - fuzzy find history backward
+# Keybindings for up and down arrow to search through the history
+source ~/.config/zsh/key-bindings.zsh
 
 # Set Color
 export TERM='tmux-256color'
