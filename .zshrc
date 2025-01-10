@@ -41,8 +41,6 @@ export BAT_CONFIG_PATH="$HOME/.config/bat/config"
 alias ls='eza -aF --sort=Name --group-directories-first'
 alias ll='eza -alF --sort=Name --group-directories-first --header'
 alias cat='batcat'
-alias dotfiles_git='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias dotfiles_lazygit='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Run fastfetch
 fastfetch
