@@ -5,6 +5,7 @@
 |---|---|--|
 | Git                                                   | `sudo apt install git` | |
 | Zsh                                                   | `sudo apt install zsh` | |
+| GNU Stow                                              | `suto apt install stow` | |
 | [Oh My Posh](https://ohmyposh.dev/docs/installation/linux) | | |
 | [zsh-syntax-highlighting ](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#in-your-zshrc) | | |
 | [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone) | | |
