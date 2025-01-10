@@ -1,4 +1,5 @@
 # Copied from https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/key-bindings.zsh
+# on 10th Jan 2025
 
 # http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html
 # http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html#Zle-Builtins
@@ -144,4 +145,3 @@ bindkey "^[m" copy-prev-shell-word
 #bindkey '^I' complete-word
 ## Fix weird sequence that rxvt produces
 #bindkey -s '^[[Z' '\t'
-#
