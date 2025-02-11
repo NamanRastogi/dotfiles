@@ -31,7 +31,7 @@
 1. Stow the files from `.dotfiles` directory to its parent directory (i.e. `~` directory).
 
     ```sh
-    cd .dotfiles
+    cd ~/.dotfiles
     stow .
     ```
 
