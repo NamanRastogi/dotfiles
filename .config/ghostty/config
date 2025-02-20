@@ -1,0 +1,13 @@
+# Appearance
+############
+font-family = MesloLGS NF
+font-size = 13
+window-height = 30
+window-width = 120
+cursor-style = block
+theme = molokai
+
+# Shaders - https://github.com/hackr-sh/ghostty-shaders.git
+###########################################################
+# custom-shader = ghostty-shaders/glitchy.glsl
+# custom-shader = ghostty-shaders/in-game-crt.glsl
