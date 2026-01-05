@@ -4,6 +4,9 @@
     "diagnostics": false,
     "metrics": false,
   },
+  "tasks": {
+    "enabled": false
+  },
   "base_keymap": "VSCode",
   "format_on_save": "on",
 
