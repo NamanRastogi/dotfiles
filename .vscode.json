@@ -1,4 +1,6 @@
 {
+    "telemetry.telemetryLevel": "off,
+    "chat.disableAIFeatures": true,
     "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
@@ -21,6 +23,7 @@
     "editor.autoClosingBrackets": "always",
     "editor.autoClosingQuotes": "always",
     "editor.formatOnPaste": true,
+    "editor.guides.bracketPairs": true,
     "editor.bracketPairColorization.enabled": true,
     "editor.scrollBeyondLastLine": true,
     "terminal.external.osxExec": "iTerm.app",
@@ -31,7 +34,6 @@
     "zenMode.hideTabs": false,
     "zenMode.hideStatusBar": false,
     "zenMode.hideActivityBar": false,
-    "telemetry.telemetryLevel": "off",
     "python.languageServer": "Pylance",
     "python.pythonPath": "/usr/bin/python3",
     "python.formatting.provider": "yapf"
