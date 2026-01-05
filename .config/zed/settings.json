@@ -1,136 +1,137 @@
 {
-  // General
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false,
-  },
-  "tasks": {
-    "enabled": false,
-  },
-  "base_keymap": "VSCode",
-  "format_on_save": "on",
-
-  // Extension
-  "auto_install_extensions": {
-    "zedokai": true,
-    "one-dark-pro": true,
-    "bearded-icon-theme": true,
-    "emoji-completions": true,
-    "codebook": true,
-  },
-
-  // Theme
-  "theme": "Zedokai Darker (Filter Spectrum)",
-  "icon_theme": "Bearded Icon Theme",
-
-  // UI
-  "title_bar": {
-    "show_branch_icon": true,
-    "show_branch_name": true,
-    "show_menus": true,
-    "show_sign_in": false,
-  },
-  "tab_bar": {
-    "show_tab_bar_buttons": false,
-    "show_nav_history_buttons": false,
-  },
-  "tabs": {
-    "file_icons": true,
-  },
-  "toolbar": {
-    "quick_actions": false,
-  },
-
-  // Font
-  "ui_font_family": ".ZedSans",
-  "buffer_line_height": "standard",
-  "buffer_font_family": "MesloLGS NF",
-  "buffer_font_size": 14.0,
-
-  // Editor
-  "sticky_scroll": {
-    "enabled": true,
-  },
-  "soft_wrap": "editor_width",
-  "wrap_guides": [80],
-  "show_whitespaces": "trailing",
-  "indent_guides": {
-    "coloring": "indent_aware",
-    "active_line_width": 2,
-    "enabled": true,
-  },
-  "gutter": {
-    "min_line_number_digits": 2,
-  },
-  "colorize_brackets": true,
-
-  // Editor completions and hints
-  "auto_signature_help": true,
-  "inlay_hints": {
-    "enabled": true,
-  },
-  "completions": {
-    "words": "enabled",
-  },
-
-  // Terminal
-  "terminal": {
-    "max_scroll_history_lines": 100000,
-  },
-
-  // Git
-  "git": {
-    "blame": {
-      "show_avatar": false,
+    // General
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false,
     },
-    "inline_blame": {
-      "enabled": false,
+    "tasks": {
+        "enabled": false,
     },
-  },
+    "base_keymap": "VSCode",
+    "format_on_save": "on",
 
-  // AI
-  "disable_ai": true,
-  "agent": {
-    "default_model": {
-      "provider": "ollama",
-      "model": "qwen3:4b",
+    // Extension
+    "auto_install_extensions": {
+        "zedokai": true,
+        "one-dark-pro": true,
+        "bearded-icon-theme": true,
+        "emoji-completions": true,
+        "codebook": true,
     },
-    "model_parameters": [],
-  },
-  "language_models": {
-    "ollama": {
-      "api_url": "http://localhost:11434",
-      "available_models": [
-        {
-          "name": "gemma3:12b",
-          "display_name": "Gemma 3 (12B)",
-          "max_tokens": 16384,
-          "supports_thinking": false,
-          "supports_tools": false,
-          "supports_images": true,
+
+    // Theme
+    "theme": "Zedokai Darker (Filter Spectrum)",
+    "icon_theme": "Bearded Icon Theme",
+
+    // UI
+    "title_bar": {
+        "show_branch_icon": true,
+        "show_branch_name": true,
+        "show_menus": true,
+        "show_sign_in": false,
+    },
+    "tab_bar": {
+        "show_tab_bar_buttons": false,
+        "show_nav_history_buttons": false,
+    },
+    "tabs": {
+        "file_icons": true,
+    },
+    "toolbar": {
+        "quick_actions": false,
+    },
+
+    // Font
+    "ui_font_family": ".ZedSans",
+    "buffer_line_height": "standard",
+    "buffer_font_family": "MesloLGS NF",
+    "buffer_font_size": 14.0,
+
+    // Editor
+    "sticky_scroll": {
+        "enabled": true,
+    },
+    "tab_size": 4,
+    "soft_wrap": "editor_width",
+    "wrap_guides": [80],
+    "show_whitespaces": "trailing",
+    "indent_guides": {
+        "coloring": "indent_aware",
+        "active_line_width": 2,
+        "enabled": true,
+    },
+    "gutter": {
+        "min_line_number_digits": 2,
+    },
+    "colorize_brackets": true,
+
+    // Editor completions and hints
+    "auto_signature_help": true,
+    "inlay_hints": {
+        "enabled": true,
+    },
+    "completions": {
+        "words": "enabled",
+    },
+
+    // Terminal
+    "terminal": {
+        "max_scroll_history_lines": 100000,
+    },
+
+    // Git
+    "git": {
+        "blame": {
+            "show_avatar": false,
         },
-        {
-          "name": "qwen3:4b",
-          "display_name": "Qwen 3 (4B)",
-          "max_tokens": 16384,
-          "supports_thinking": true,
-          "supports_tools": true,
-          "supports_images": false,
+        "inline_blame": {
+            "enabled": false,
         },
-      ],
     },
-  },
 
-  // WSL
-  "wsl_connections": [
-    {
-      "distro_name": "archlinux",
-      "user": null,
-      "projects": [
-        {
-          "paths": ["/root"],
+    // AI
+    "disable_ai": true,
+    "agent": {
+        "default_model": {
+            "provider": "ollama",
+            "model": "qwen3:4b",
         },
-      ],
+        "model_parameters": [],
     },
-  ],
+    "language_models": {
+        "ollama": {
+            "api_url": "http://localhost:11434",
+            "available_models": [
+                {
+                    "name": "gemma3:12b",
+                    "display_name": "Gemma 3 (12B)",
+                    "max_tokens": 16384,
+                    "supports_thinking": false,
+                    "supports_tools": false,
+                    "supports_images": true,
+                },
+                {
+                    "name": "qwen3:4b",
+                    "display_name": "Qwen 3 (4B)",
+                    "max_tokens": 16384,
+                    "supports_thinking": true,
+                    "supports_tools": true,
+                    "supports_images": false,
+                },
+            ],
+        },
+    },
+
+    // WSL
+    "wsl_connections": [
+        {
+            "distro_name": "archlinux",
+            "user": null,
+            "projects": [
+                {
+                    "paths": ["/root"],
+                },
+            ],
+        },
+    ],
 }
