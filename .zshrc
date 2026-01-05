@@ -25,7 +25,7 @@ export BAT_CONFIG_PATH="$HOME/.config/bat/config"
 # Aliases
 alias ls='eza -aF --sort=Name --group-directories-first'
 alias ll='eza -alF --sort=Name --group-directories-first --header'
-alias cat='batcat'
+alias cat='bat'
 
 # Run fastfetch
 fastfetch
