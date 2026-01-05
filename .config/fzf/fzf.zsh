@@ -6,8 +6,12 @@ fi
 
 # Auto-completion
 # ---------------
+# MacOS
 # [[ $- == *i* ]] && source "$HOME/.fzf/shell/completion.zsh" 2> /dev/null
-[[ $- == *i* ]] && source /usr/share/doc/fzf/examples/completion.zsh 2> /dev/null
+# Archlinux
+[[ $- == *i* ]] && source /usr/share/fzf/completion.zsh 2> /dev/null
+# Ubuntu
+# [[ $- == *i* ]] && source /usr/share/doc/fzf/examples/completion.zsh 2> /dev/null
 
 # Key bindings
 # ------------
