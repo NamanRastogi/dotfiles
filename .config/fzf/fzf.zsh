@@ -15,8 +15,12 @@ fi
 
 # Key bindings
 # ------------
+# MacOS
 # source "$HOME/.fzf/shell/key-bindings.zsh"
-source /usr/share/doc/fzf/examples/key-bindings.zsh
+# Archlinux
+source /usr/share/fzf/key-bindings.zsh
+# Ubuntu
+# source /usr/share/doc/fzf/examples/key-bindings.zsh
 
 # Customization
 export FZF_DEFAULT_COMMAND='fd --type f --hidden'
