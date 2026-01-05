@@ -5,6 +5,7 @@
     "metrics": false,
   },
   "base_keymap": "VSCode",
+  "format_on_save": "on",
 
   // Theme
   "theme": "Zedokai Darker (Filter Spectrum)",
@@ -63,17 +64,6 @@
   // Terminal
   "terminal": {
     "max_scroll_history_lines": 100000,
-  },
-
-  // Language
-  "languages": {
-    "Python": {
-      "colorize_brackets": true,
-      "enable_language_server": true,
-      "format_on_save": "on",
-      "show_completions_on_input": true,
-      "show_completion_documentation": true,
-    },
   },
 
   // AI
