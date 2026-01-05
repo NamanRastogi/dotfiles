@@ -5,10 +5,19 @@
     "metrics": false,
   },
   "tasks": {
-    "enabled": false
+    "enabled": false,
   },
   "base_keymap": "VSCode",
   "format_on_save": "on",
+
+  // Extension
+  "auto_install_extensions": {
+    "zedokai": true,
+    "one-dark-pro": true,
+    "bearded-icon-theme": true,
+    "emoji-completions": true,
+    "codebook": true,
+  },
 
   // Theme
   "theme": "Zedokai Darker (Filter Spectrum)",
