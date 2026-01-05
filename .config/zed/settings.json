@@ -69,6 +69,16 @@
     "max_scroll_history_lines": 100000,
   },
 
+  // Git
+  "git": {
+    "blame": {
+      "show_avatar": false,
+    },
+    "inline_blame": {
+      "enabled": false,
+    },
+  },
+
   // AI
   "disable_ai": true,
   "agent": {
